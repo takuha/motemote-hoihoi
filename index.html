@@ -486,7 +486,7 @@ fillGoal();drawLog();
 
 // 無料版：メッセージは「最初のあいさつ」だけ。残りとデート準備は合言葉で開く
 // ↓ 配る前に、LINE_URL に公式LINEの友だち追加URL、PWS に合言葉を入れる
-const FREE_SCENE='first', LINE_URL="https://lin.ee/NrpZa6W", PWS=["きょうのいっぽ","今日の一歩","今日のいっぽ","きょうの一歩"]; // 合言葉はGTの公式LINEのあいさつで届ける（モテ塾 AI参謀と同じ）
+const FREE_SCENE='first', LINE_URL="https://lin.ee/YQwpKsz", PWS=["きょうのいっぽ","今日の一歩","今日のいっぽ","きょうの一歩"]; // 合言葉はGTの公式LINEのあいさつで届ける（モテ塾 AI参謀と同じ）
 function norm(t){return t.normalize('NFKC').replace(/\s/g,'').replace(/[ァ-ヶ]/g,c=>String.fromCharCode(c.charCodeAt(0)-0x60))}
 let memOpen=false; // 保存できないブラウザでも、開いている間は開いたままにする
 function isOpen(){return memOpen||sGet('unlocked')==='1'}
